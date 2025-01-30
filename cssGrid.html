@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Grids</title>
+
+	<style>
+		.container{
+			width: 400px;
+			height: 450px;
+			border: 5px solid red;
+			padding: 70px;
+			background-color: aquamarine;
+
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-template-rows: 50% auto auto;
+			grid-template: 50% auto auto / auto auto auto;
+			grid-gap: 2px;
+		}
+
+		.item{
+			border: 1px solid black;
+			padding: 12px;
+			background-color: pink;
+		}
+
+		#item-3{
+			/* grid-row-start: 2;
+			grid-row-end: 4; */
+			grid-row: 2 / 4;
+		}
+
+		#item-7{
+			grid-column: 4 / span 2;
+		}
+
+		#item-9{
+			grid-area: 3 / 5 / span 1 / span 2;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item" id="item-3">Item 3</div>
+		<div class="item">Item 4</div>
+		<div class="item">Item 5</div>
+		<div class="item">Item 6</div>
+		<div class="item" id="item-7">Item 7</div>
+		<div class="item">Item 8</div>
+		<div class="item" id="item-9">Item 9</div>
+	</div>
+</body>
+</html>

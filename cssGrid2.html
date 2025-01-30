@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Css grid 2</title>
+
+	<style>
+		.container{
+			border: 1px solid red;
+			border-radius: 12px;
+
+			display: grid;
+			grid-template-columns: auto auto auto;
+		}
+
+		.header{
+			border: none;
+			background: aqua;
+			grid-column: 1 / span 3;
+			text-align: center;
+		}
+
+
+
+		.footer{
+			grid-column: 1 / span 3;
+			text-align: center;
+		}
+
+		.item{
+			border: 2px solid red;
+		}
+
+
+		#item-1{
+			grid-column: 2 / span 3;
+		}
+
+		#item-2{
+			grid-column: 1 / span 1;
+		}
+
+		#item-3{
+			grid-column: 2 / span 1;
+		}
+
+		#item-4{
+			grid-column: 3 / span 1;
+		}
+		
+		#item-5{
+			grid-column: 2 / span 1;
+		}
+
+
+		img{
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Famous Dishes of India</h1>
+		</div>
+
+		<div class="item" id="item-1">
+			<img src="./images/food-1.jpeg" alt="">
+			<figcaption>Dosa / South India</figcaption>
+		</div>
+		<div class="item" id="item-2">
+			<img src="./images/food-2.jpeg" alt="">
+			<figcaption>Chhole Bhature / North India</figcaption>
+		</div>
+		<div class="item" id="item-3">
+			<img src="./images/food-3.jpeg" alt="">
+			<figcaption>Jalebi / North India</figcaption>
+		</div>
+		<div class="item" id="item-4">
+			<img src="./images/food-4.jpeg" alt="">
+			<figcaption>Samosa / North India</figcaption>
+		</div>
+		<div class="item" id="item-5">
+			<img src="./images/food-5.jpeg" alt="">
+			<figcaption>Vada Paw / Maharashtra</figcaption>
+		</div>
+
+		<div class="footer">
+			<p>Copyright Reserved</p>
+		</div>
+	</div>
+</body>
+</html>

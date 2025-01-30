@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* universal selector */
+        * {
+            padding: 0;
+        }
+
+        /* type selector */
+        h1 {
+            color: aqua;
+            background-color: brown;
+            font-size: 60px;
+        }
+
+        /* attribute selector */
+        a[href="lists.html"] {
+            color: white;
+            background-color: red;
+        }
+
+        /* id selector */
+        #h-2 {
+            background-color: yellow;
+            color: blueviolet;
+        }
+
+        /* class selector */
+        .heading {
+            background-color: blue;
+            color: white;
+            font-style: oblique;
+        }
+
+        /* pseudo selector */
+        .heading:hover{
+            background-color: yellow;
+            cursor: pointer;
+        }
+
+        /* combinator selector */
+        .container p{
+            color: chartreuse;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Learning CSS</h1>
+    <h2 id="h-2">Learning CSS</h2>
+    <h3 class="heading">Learning CSS</h3>
+    <h4 class="heading">Learning CSS</h4>
+    <h5>Learning CSS</h5>
+
+    <a href="lists.html">List HTML</a>
+    <a href="table.html">Table HTML</a>
+
+    <div class="container"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, provident optio. Sequi esse illum nobis exercitationem rerum iusto rem sint.</p></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga.</p>
+
+    <!-- 
+    Types of selectors:
+    type selectors
+    attribute
+    id
+    class 
+    universal
+    pseudo
+    combinator -->
+</body>
+
+</html>

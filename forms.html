@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Forms</title>
+</head>
+<body>	
+	<form action="">
+		<label for="username">Enter Name: </label>
+		<input type="text" name="username" id="username" size="50" maxlength="10" placeholder="Name" value="Your Name">
+
+		<br><br>
+
+		<label for="password">Enter password: </label>
+		<input type="password" name="pass1" id="password" placeholder="Enter your password">
+
+		<br><br>
+
+		<!-- for value == id value -->
+		<label for="email">Enter email: </label> 
+		<input type="email"	name="useremail" id="email" placeholder="Enter your email address">
+
+		<br><br>
+
+		<label for="intro">Write about yourself: </label> <br>
+		<textarea name="moviereview" id="intro" cols="30" rows="10" placeholder="Write your review here"></textarea>
+
+		<br><br>
+
+		<label for="lang">Check the language you can speak: </label>
+		<br>
+		<input type="checkbox" name="lng" id="lang" value="eng"> English <br>
+		<input type="checkbox" name="lng" id="lang" value="hin"checked> Hndi <br>
+		<input type="checkbox" name="lng" id="lang" value="french"> French <br>
+		<input type="checkbox" name="lng" id="lang" value="sanskrit"> Sanskrit <br>
+
+		<br><br>
+
+		<label for="gender">Select your gender: </label>
+		<br>
+		<input type="radio" name="gender" id="male" checked> 
+		<label for="male">Male</label>
+		<br> 
+		<input type="radio" name="gender" id="female"> 
+		<label for="female">Female</label>
+		<br> 
+		<input type="radio" name="gender" id="others"> 
+		<label for="others">Others</label> 
+
+		<br><br>
+
+		<label for="state">Select your state: </label>
+		<br>
+		<select name="state" id="state" size="2" multiple>
+			<option value="choose" selected>Choose your state</option>
+			<option value="delhi">Uttarakhand</option>
+			<option value="mumbai">Maharashtra</option>
+			<option value="kolkata">West Bengal</option>
+			<option value="chennai">Kerala</option>
+		</select>
+
+		<br><br>
+
+		<label for="photo">Upload your passport size photograph: </label><br>
+		<input type="file" accept=".pdf .docx" id="photo">
+
+		<br><br>
+
+
+		<br><br>
+		<input type="submit" value="SUBMIT" name="submit" id="submit-form">
+		<input type="reset" value="RESET" name="reset" id="reset-form">
+		<br><br>
+		<input type="image" name="img-btn" id="img-btn" 
+		src="./images/wallpaperflare.com_wallpaper.jpg" width="70" height="29">
+		
+	</form>
+</body>
+</html>
